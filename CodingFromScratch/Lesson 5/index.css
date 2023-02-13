@@ -1,0 +1,60 @@
+nav{
+    position:relative;
+    top:0px;
+    left:150px;
+    margin-top:100px;
+    margin-left:50px;
+}
+
+h1 {
+    margin-bottom: 10px 20px;
+    padding: 20px 10px 10px 10px;
+}
+
+article{
+    margin: 20px 50px 75px 100px;
+    padding-top: 20px;
+    padding-left: 50px;
+    border-style:solid;
+    background-color: cyan;
+}
+
+#idk{
+    font-family:'Trebouche MS', Arial, Helvetica, sans-serif;
+    border-style: dashed dotted solid double;
+    border-width: medium, 12px thick;
+    border-color:blue;
+    padding-top: 50%;
+}
+div{
+    font-family: 'Roboto Mono', monospace;
+    border:5px solid red;
+    display:inline;
+}
+
+ul{
+    border:10px dashed #3398FF;
+}
+
+#hide{
+    display:none;
+}
+
+
+#block{
+    display:block;
+
+
+}
+
+#one{
+    width:200px;
+    padding:10px;
+    float:left;
+}
+
+#div{
+    width:200px;
+    padding:10px;
+    float:right'
+}

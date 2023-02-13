@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js">
+
+        function addNumbers() {
+            alert(2+3);
+        }
+
+    </script>
+
+    <button onclick="addNumbers()">Add!</button>
+    
+    <button id="submitButton">Submit!</button>
+
+    <ul>
+        <li>apples</li>
+        <li>oranges</li>
+        <li>grapes</li>
+    </ul>
+
+    <p class="paragraph">I am a paragraph</p>
+
+    <input id="firstname" type="text">
+    <input id="lastname" type="text">
+    <input id="email" type="text">
+    <input id="age" type="number">
+    <button onclick="getValues()" >Get Values</button>
+
+
+    <p id="paragraph2">I am paragraph2</p>
+    <p id="p3">p3</p>
+
+    <script>
+        let myButton = document.getElementbyId("submitButton");
+        console.log(myButton);
+
+        let fruit = document.getElementsByTagName("li"); //try with ul ??
+        console.log(fruit);
+
+        let text = document.getElementsByClassName("paragraph"); //returns array of elements with this class name
+
+        function getValues(){
+            let firstname = document.getElementById("firstname").value;
+            let lastname = document.getElementsById("lastname").value;
+            let email = document.getElementbyId("email").value;
+            let age = parseInt(document.getElementbyId("age").value);
+
+            console.log("First name: " + firstname);
+            console.log("last name: " + lastname);
+            console.log("Email: " + email);
+            console.log("age: "+ age);
+        }
+        
+        let text2 = document.getElementbyId("paragraph2").innerHTML;
+        console.log(text2);
+
+        document.getElementbyId("paragraph2") = text2 + " and I am awesome";
+
+        document.getElementbyId("p3").innerHTML = "I am an empty paragraph"; //re-assigns p3
+    
+    </script>
+
+    <button onclick="handleClick()">Click me</button>
+
+    <script>
+        function handleClick(){
+            alert("button clicked");
+        
+        }
+    </script>
+
+    <button id="clickbutton">Click me</button>
+
+    <script>
+        let button = document.getElementbyId("clickbutton");
+        
+        // option 1: button.onclick = HandleClick; //assigning not calling
+
+        /* option 2: button.addEventListener("click", HandleClick); //does same thing as above
+
+        function HandleClick(event){
+             //getting the click me text from the button
+            console.log(event.target.innerHTML);
+        }
+
+        */
+
+        //Option 3:
+        button.addEventListener("click", function (event){
+             //getting the click me text from the button
+            console.log(event.target.innerHTML);
+        });
+
+    </script>
+</body>
+</html>

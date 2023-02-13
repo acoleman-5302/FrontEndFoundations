@@ -1,0 +1,81 @@
+p {
+    color : blue;
+    font-size : 2em;
+    font-weight : 900;
+}
+
+div {
+    color : #9f00ff ;
+    font-size: 40px;
+    font-weight : bold;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+#container {
+    color:black;
+}
+
+.LeftColumn {
+    color:red;
+}
+
+#which {
+    color:black;
+}
+
+.one {
+    color:red;
+}
+
+#div_1 {
+    font-weight:bold;
+    color:black;
+    font-size: 1em;
+}
+
+#div_2 {
+    font-size:1.5em;
+    color:black;
+}
+
+.blue {
+    color:blue;
+}
+
+.red {
+    color:red;
+}
+
+.green {
+    color:green;
+}
+
+.magenta {
+    color:magenta;
+}
+
+#topic-link {
+    color: red;
+}
+
+#topic-link:visited {
+    color:magenta;
+}
+
+#topic-link:hover{
+    color:white;
+}
+
+
+.header :First-Child {
+    color:red;
+    font-size: large;
+}
+
+
+.header2 :nth-child(odd) {
+    color:blue;
+}

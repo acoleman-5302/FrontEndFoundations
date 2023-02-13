@@ -1,0 +1,50 @@
+/* changes background color of website*/ 
+html{
+    background-color: lightblue;
+}
+
+/* centers the form, heading, and Full Name on ID card */ 
+.center-text{
+    text-align:center;
+}
+
+/* targets the button and ID card and centers them on the page*/ 
+.center-box{
+    display:table;
+    margin: auto ;
+}
+
+/* gives spacing between inputs*/ 
+input{
+    margin:5px;
+}
+
+/* changes look of the ID card*/ 
+#idCard {
+    border: 5px solid black;    
+    height: 14em;
+    width: 25em;
+    border-radius: 25px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: lightgoldenrodyellow;
+    margin-top: 50px;
+    padding:5px;
+}
+
+/* image sizing and placement on ID card*/ 
+img {
+    width: 90px;
+    height: 90px;  
+    float: left;
+}   
+
+/* changes font-size of Full name on ID card*/ 
+#postFullName{
+    font-size:x-large;
+    margin:25px;
+}
+
+/* changes spacing between paragraph tags with Age, number, and Address in the ID card*/ 
+.align{
+    margin: 0px;
+}

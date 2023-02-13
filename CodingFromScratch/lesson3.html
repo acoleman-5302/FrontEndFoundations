@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 3</title>
+    </head>
+    <body>
+        <p>This is a paragraph ! This is <strong>bold</strong>. This is <i>italisized</i>. This is <em>emphasized</em>!</p>
+        <p><h1>This is the largest Heading option</h1></p>
+        <h6>This is smallest heading</h6>
+
+        <h1>Anna Coleman</h1>
+        <h3>1000 LongFellow Blvd Lakeland, FL 33801</h3>
+        <h5>Rachael, Kris, Levi, Lydia</h5>
+        <header> Hey</header>
+        <section> hi!
+            <side> hello</side>
+        </section>
+        <footer> Goodbye</footer>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</td>
+                    <th>QTY</td>
+                    <th>Price</td>
+                    <th>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apples</td>
+                    <td>3</td>
+                    <td>1.3</td>
+                    <td>Fruit</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>1</td>
+                    <td>2.99</td>
+                    <td>Dairy</td>
+                </tr>
+                <tr>
+                    <td>Beef</td>
+                    <td>2</td>
+                    <td>10.50</td>
+                    <td>Meat</td>
+                </tr>
+        
+            </tbody>
+        </table>
+
+
+        <h3>My Amazing References</h3>
+        <table>
+        <theader>
+            <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Phone Number</th>
+            </tr>
+        </theader>
+        <tbody>
+            <tr>
+            <td>Rachael Coleman</td>
+            <td>Mother/Teacher</td>
+            <td>(123)-456-7891</td></td>
+            </tr>
+            <tr>
+            <td>Dr. Jim</td>
+            <td>Health Care Professional</td>
+            <td>+(509)- 123-4567</td>
+            </tr>
+            <tr>
+            <td>Kara Smithson</td>
+            <td>Principle</td>
+            <td>+(509)-456-1234</td>
+            </tr>
+        </tbody>
+        </table>
+    
+
+
+
+        <form>
+            <label>First Name: <input type = "text" id = "FirstName" name = "FirstName" /> </label>
+            <label for = LastName>Last Name:</label>
+            <input type = "text" id = "LastName" name=" LastName" placeholder = "Last Name" />
+            <input type = "Submit" value = "Submit"/>
+        </form>
+
+        <form>
+            <input name="firstname" required="True"/>
+            <input name="age" type="number" min="13" max="120"/>
+            <input name="email" type="email"/>
+            <input name="url" type="url"/>
+            <input name="telephone number" type="tel"/>
+            <input type="submit" value="Submit" />
+        </form>
+
+        <form>
+            <textarea rows="10" cols="50" name="message"></textarea>
+            <input type="submit" value="submit" />
+        </form>
+
+        <form>
+            <select name="color" >
+                <option value="R" >Red</option>
+                <option selected value="B">Blue</option>
+                <option value="W">White</option>
+            </select>
+            <input type="submit" value="submit" />
+        </form>
+
+        <form>
+            <input type="Checkbox" id="red" name="ColorRed" value="Red" />
+            <label for="red" >Red</label><br>
+            <input type="Checkbox" id="blue" name="ColorBlue" Value="Blue"/>
+            <label for="blue">Blue</label><br>
+            <input type="checkbox" id="white" name="ColorWhite" value="White"/>
+            <label for="white">White</label><br>
+            <input type="submit" value="submit me"/>
+        </form>
+
+        <form>
+            <input type="radio" id="weathersun" name="weather" value="sun" />
+            <label for="weathersun">Sun</label><br>
+            <input type="radio" id="weatherclouds" name="weather" value="clouds" />
+            <label for="weatherclouds">Clouds</label><br>
+            <input type="radio" id="wetherrain" name="weather" value="rain"/>
+            <label for="wetherrain">Rain</label><br>
+            <button type="submit">Submit Me</button>
+        </form>
+
+
+
+
+
+
+        <form>
+            First Name: <input type="text" name="firstname" placeholder="First Name" /> <br>
+            Last Name: <input type="text" name="lastname" placeholder="Last Name"/><br>
+            Gender:
+            <select name="gender">
+                <option selected value="M">Male</option>
+                <option value="F">Female</option>
+            </select><br>
+            Age: <br>
+            <input type="radio" id="Child" name="Age" value="0-17"/>
+            <label for="Child">0-17</label><br>
+            <input type="radio" id="Adult_1" name="Age" value="18-40"/>
+            <label for="Adult_1">18-40</label><br>
+            <input type="radio" id="Adult_2" name="Age" value="40-70"/>
+            <label for="Adult_2">40-70</label><br>
+            <input type="radio" id="Senior" name="Age" value="70+"/>
+            <label for="Senior">70+</label><br>
+            <button type="Submit">Submit Me</button>
+
+        </form>
+
+
+
+        <form>
+            First Name: <input type="text"name="firstname" value="First Name"/><br>
+            Last Name: <input type="text" name="lastname" value="Last Name"/><br>
+            <input type="submit" name=" Submit Me" />
+        </form>
+        <h4>My Dream Developer Positions</h4>
+        <input type="radio" id="job_1" name="Jobs" value="Job # 1"/>
+        <label for="job_1">Job # 1</label><br>
+        <input type="radio" id="job_2" name="Jobs" value="Job # 2"/>
+        <label for="job_2"></label>Job # 2</label><br>
+        <input type="radio" id="job_3" name="Jobs" value="Job # 3"/>
+        <label for="job_3">Job # 3</label><br>
+        <input type="radio" id="job_4" name="Jobs" value="Job # 4"/>
+        <label for="job_4">Job # 4</label><br>
+        <button type="submit">Sumbit!</button>
+    </body>
+</html>
