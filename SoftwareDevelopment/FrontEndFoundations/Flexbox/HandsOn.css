@@ -1,0 +1,17 @@
+.title-container{
+    border:1px solid white;
+    display:flex;
+    justify-content: center;
+    background-color: lightblue;
+    font-size:larger;
+    padding:20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.image-grid{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+  
+    align-items:row;
+}

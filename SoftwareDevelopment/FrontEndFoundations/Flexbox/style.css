@@ -13,9 +13,86 @@
 }
 
 .menu{
-    border:1px solid white;
+    /*border:1px solid white; */
     width:900px;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+
+.links{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.login{
+    margin-left:20px;
+}
+
+.header-container {
+    color:black;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width:900px;
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-grid-container {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.image-grid{
+    width:900px;
+    display:flex;
+    justify-content: center; /*now effects vertical while align effects horizontal. oppositive of previous use ! */
+    flex-wrap:wrap;
+    /*flex-direction: column;
+    align-items: center; */
+}
+
+.image-grid-item{
+    width:235px;
+    height:250px;
+
+}
+
+.first-item{
+    order:1; /* everything has a default order of 0, 1 makes it the last ! */
+}
+
+.last-item {
+    order : -1;
+}
+
+.icons , .subscribe {
+    align-self: flex-start;
+    margin-top:20px;
+}
+
+.footer {
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    border: 1px solid white;
+    background-color: lightblue;
+    height: 200px;
+    flex:1;
+}
+
+.footer-one, .footer-three{
+    flex:initial;
+    width:300px;
+    background-color: lightgray;
 }
 
