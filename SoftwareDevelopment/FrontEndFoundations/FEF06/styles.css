@@ -1,0 +1,10 @@
+@media (max-width : 576px){
+    body{
+        background-color: lightblue;
+    }
+}
+
+.row div{
+    border: 1px solid black;
+    background-color: lightseagreen;
+}
