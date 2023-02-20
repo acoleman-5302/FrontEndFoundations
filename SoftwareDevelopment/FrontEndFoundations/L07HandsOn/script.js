@@ -1,11 +1,11 @@
 function regexChecker() {
     let result;
-    var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
     let regexFirstName = /^[A-Z][a-z]+$/ 
     let regexLastName = /^[A-Z][a-z]+$/
 
-    firstname.match(regexFirstName) && lastname.match(regexLastName) ? result = true : result = false;
+    firstName.match(regexFirstName) && lastName.match(regexLastName) ? result = true : result = false;
     if (result){
         alert("Yay! Your inputs were all correct!");
     }
