@@ -7,9 +7,9 @@ function regexChecker() {
 
     firstname.match(regexFirstName) && lastname.match(regexLastName) ? result = true : result = false;
     if (result){
-        alert("Yay! Your Inputs were all correct!");
+        alert("Yay! Your inputs were all correct!");
     }
     else{
-        alert("Oh no! Thats an invalid format!");
+        alert("Oh no! That's an invalid format!");
     }
 };
