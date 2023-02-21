@@ -1,3 +1,23 @@
+html{
+    font-size:larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1{
     background-color: lightblue;
+    text-align: center;
+}
+
+p{
+    color:darkolivegreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.input{
+    color: red;
+}
+
+input{
+    margin:10px;
 }
