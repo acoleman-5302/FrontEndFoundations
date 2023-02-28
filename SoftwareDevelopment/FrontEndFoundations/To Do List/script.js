@@ -17,3 +17,5 @@ addToDoButton.addEventListener("click", function(){
         todocontainer.removeChild(paragraph);
     })
 });
+
+console.log("hello")

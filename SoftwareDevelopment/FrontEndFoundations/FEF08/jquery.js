@@ -6,7 +6,10 @@ $(document).ready(function () {
         //    $(this).hide();
         //});
         ////hides p when clicked
-
+    let myObj;
+    console.log(myObj);
+    let text = document.getElementsByName("p").innerHTML;
+    console.log(text);
         $("p").click(function(){
             // if($(this).hasClass("blue")){
             //     $(this).removeClass("blue");
