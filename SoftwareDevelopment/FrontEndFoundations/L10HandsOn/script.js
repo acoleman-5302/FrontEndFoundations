@@ -17,15 +17,13 @@ $("button").click(function(){
         if(this.readyState == 4 && this.status == 200){
             let myRepos = JSON.parse(this.responseText);
             document.getElementById("MyRepos").innerHTML = " " ;
-            console.log(myRepos[0].name);
-            console.log(listgroup)
+
             for (i=0 ; i < myRepos.length ;i++){
                 var a = document.createElement('a');
                 var linkText = document.createTextNode(myRepos[i].name);
                 
                 a.classList.add("dropdown-item");
                 a.appendChild(linkText);
-                a.title = "Title"
                 a.href= myRepos[i].html_url ;
                 listgroup.appendChild(a);
             }
