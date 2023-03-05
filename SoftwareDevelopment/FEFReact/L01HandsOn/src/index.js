@@ -75,5 +75,3 @@ ReactDOM.render(
   ),
   document.getElementById('root')
 );
-
-alert("hello!");
