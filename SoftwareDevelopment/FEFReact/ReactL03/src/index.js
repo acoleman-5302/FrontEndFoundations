@@ -230,6 +230,4 @@ const GroceryList = props => (
 
 
 
-
-
 ReactDOM.render(<App/>, document.getElementById('root'));
