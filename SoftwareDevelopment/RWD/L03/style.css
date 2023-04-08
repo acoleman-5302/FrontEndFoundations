@@ -1,0 +1,29 @@
+/* [class*='col-'] {
+    float: left;
+    margin:2px;
+ }
+
+
+.side{
+    background-color: lightgray;
+}
+
+.main{
+    background-color: blue;
+    
+} */
+
+
+[class*='col-'] {
+    padding-right: 20px;
+ }
+ [class*='col-']:last-of-type {
+    padding-right: 0;
+ }
+
+
+ *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }

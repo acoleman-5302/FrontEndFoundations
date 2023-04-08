@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+    padding:1em;
+}
+
+.sidebar{
+    background-color: grey;
+    margin: 1em 0;
+}
+
+.header{
+    background-color:burlywood;
+    padding-top:0%;
+}
+
+.articles{
+    background-color: lightgray;
+}
+
+.images{
+    background-color: bisque;
+}
+
+.footer{
+    background-color: burlywood;
+}

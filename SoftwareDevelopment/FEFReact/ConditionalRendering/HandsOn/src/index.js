@@ -2,16 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // Styles
-const containerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "100vh",
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-};
+
 
 const weatherBoxStyle = {
   display: "flex",
@@ -55,6 +46,8 @@ const textStyle = {
         temperature_2m_max: "", // Empty string for the high temperature
         temperature_2m_min: "", // Empty string for the low temperature
         precipitation_probability: "", // Empty string for the chance of rain
+        background : "url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')",
+  
       };
     }
   
@@ -68,6 +61,7 @@ const textStyle = {
   
     // Method to prepare the weather data for display
     prepareData(data) {
+
       // Check if there is a chance of rain
       let willRain = data.hourly.precipitation_probability.some((hr) => hr > 0);
       
@@ -97,6 +91,15 @@ const textStyle = {
     }
   
     render() {
+      const containerStyle = {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        backgroundImage: this.state.background,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      };
       // Check if the weather data is ready to be displayed
       let ready = false;
       if (this.state.time) {
@@ -124,6 +127,8 @@ const textStyle = {
                 ? "Rain possible within the next 24 hours"
                 : "No rain forecasted within the next 24 hours"}
             </p>
+            <button onClick={()=>{this.setState({background: "url(https://w0.peakpx.com/wallpaper/143/437/HD-wallpaper-foggy-forest-path-autumn-gloomy-weather-nature.jpg)"})}}>Change Background</button>
+            
           </div>
         )}
       </div>
