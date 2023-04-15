@@ -24,3 +24,11 @@
 .footer{
     background-color: burlywood;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.image{
+    border-radius:10px;
+}
