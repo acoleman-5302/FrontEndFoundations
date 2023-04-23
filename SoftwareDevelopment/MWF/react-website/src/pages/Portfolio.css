@@ -1,0 +1,11 @@
+img{
+    width:300px;
+    height:200px;
+}
+
+.main{
+
+  flex-grow: 1; 
+  /* for footer */
+  min-height: 100vh; 
+}
