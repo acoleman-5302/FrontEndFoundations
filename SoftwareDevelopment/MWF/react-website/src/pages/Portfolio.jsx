@@ -30,13 +30,17 @@ fetch(URL)
 
 //   getProjects();
 
+function images (){
+  repos.forEach((repo) => {
+    const image = `https://raw.githubusercontent.com/acoleman-5302/${repo.name}/main/portfolio.jpeg`
+    console.log(image);
+    })
+}
 
 function Portfolio() {
-    repos.forEach((repo) => {
-        const image = `https://raw.githubusercontent.com/acoleman-5302/${repo.name}/main/images/portfolio.png`
-        })
-  return (
 
+        images();
+  return (
     
     <div className="main">
       <header>
@@ -56,9 +60,9 @@ function Portfolio() {
                       </div>  
                   </div>
                   <div className="">
-                      <img src="" />
+                      <img src="/images/website.jpeg" />
                       <div className="">
-                          <h3>Project</h3>
+                          <h3>First Website</h3>
                           <p>description</p>
                           <a href=""><i className="fa-solid fa-up-right-from-square"></i></a>
                       </div>
