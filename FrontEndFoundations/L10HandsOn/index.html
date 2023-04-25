@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <title>Anna Coleman</title>
+        
+        <!-- bootstrap -->
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/darkly/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-w+yWASP3zYNxxvwoQBD5fUSc1tctKq4KUiZzxgkBSJACiUp+IbweVKvsEhMI+gz7" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" 
+                integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css" 
+                integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    </head>
+
+    <body>
+        
+        <!-- AJAX / JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <!-- Container for Top Half of Website:Name, icons, skills, and image. -->
+        <div class="header-container">
+
+            <!-- Name, icons, skills (top-left of page) -->
+            <div class="information">
+
+                <!-- Name -->
+                <div class="name">
+                    <h1>ANNA COLEMAN</h1> 
+                    <h4>Web Developer</h4>
+                </div>
+
+                <!-- icons  --> 
+                <div class="icon-container">
+                    <div class="icon-item">
+                        <a class="icon" href="https://github.com/acoleman-5302" ><i class="bi bi-2x bi-github"></i></a>
+                    </div>
+                    <div class="icon-item">
+                        <a class="icon" href="https://www.linkedin.com/in/anna-coleman-430b54267/"><i class="bi bi-linkedin"></i>
+                    
+                    </div>
+                    <div class="icon-item">
+                        <a class="icon" href="https://www.facebook.com/anna.coleman.353803/" ><i class="bi bi-facebook"></i></a>
+                    
+                    </div>
+                    <div class="icon-item">
+                        <a class="icon" href="https://www.instagram.com/annalucille._/"><i class="bi bi-instagram"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- My Skills  -->
+                <div class="skills"><h6>My Tech Related Skills</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">AJAX</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item">JavaScript</li>
+                    </ul>
+                </div>  
+            </div>
+
+
+            <!-- Picture of me (top-right of page) -->
+            <div class="image">
+                <img src="myImage.png"><br>
+            </div>
+        </div>
+        
+        <!-- Bottom Half of page -->
+        <div class="body-container">
+            
+            <!-- Introduction paragraph (I honestly just wanted to show that I can make
+                 the bottom of the page readable when the sticky footer is present. 
+                 So it had to be a long paragraph to show that knowledge!) -->
+            <div class="paragraph">
+                <p>Hello and welcome! My programming journey began in my first computational class in January of 2022. I am a Pure Mathematics Major at Southeastern University. 
+                    As soon as I completed Calc 1, I began tutoring for my University's tutoring system. I have been tutoring every math class I have taken since then, including 
+                    Calc 1-3, Discrete Math, Number Theory, and other topics in math. I was promoted to Lead tutor two years ago, which includes the repsonsbility of training new 
+                    tutors. I also work as a Teaching Assistant for Dr. Berhane Ghaim in the math department at Southeastern University. In this role, I proctor and grade exams.
+                </p>
+            </div>
+
+            <!-- Drop Down button that shows all existing Repos on my GitGub, using an API. -->
+            <div class="btn-group margin" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-info">View all my Repositories on GitHub</button>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div id="MyRepos" class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <!-- This is where the script.js file uploads existing Repos in my GitHub -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Sticky Footer with my contact information (uses icons) -->
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="bi bi-envelope-fill email" ></i>acoleman@seu.edu 
+            </div>    
+            <div class="footer-item">
+                <i class="bi bi-telephone-fill phone"></i>(229)834-6319
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

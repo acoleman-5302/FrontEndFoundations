@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bootstrap Lesson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+
+    <div class="container">
+        <p>I am a long paragraph. I am taking up the entire width of the page to demostrate the difference between a container and a container-fluid class. Bootsrap will take the rest</p>
+    </div>
+
+    <div class="container-fluid">
+        <p>I am a long paragraph. I am taking up the entire width of the page to demostrate the difference between a container and a container-fluid class. Bootsrap will take the rest</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" >One of Three columns</div>
+            <div class="col" >Two of Three columns</div>
+            <div class="col" >Three of Three columns</div>
+        </div>
+        <div class="row">
+            <div class="col">ONE</div>
+            <div class="col">TWO</div>
+        </div>
+        <div class="row">
+            <div class="col" >1 of 5 columns</div>
+            <div class="col" >2 of 5 columns</div>
+            <div class="col" >3 of 5 columns</div>
+            <div class="col" >4 of 5 columns</div>
+            <div class="col" >5 of 5 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-8">This div uses 8 columns</div>
+            <div class="col-4">This div used 4 columns</div>
+        </div>
+        <div class="row">
+            <div class="col">div spans available space</div>
+            <div class="col-auto">Div auto adjusts to content</div>
+            <div class="col">div spans available space</div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-4">One of 2</div>
+            <div class="col-4">One of 2</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-1">One of 2</div>
+            <div class="col-4">One of 2</div>
+            <div class="col-4">One of 2</div>
+            <div class="col-1" >One of 4</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">One of 2</div>
+            <div class="col-4">One of 2</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-4">One of 2</div>
+            <div class="col-4">One of 2</div>
+        </div>
+
+        <div class="row align-items-start" style="height:200px;border:1px dotted blue">
+            <div class="col">One of three columns</div>
+            <div class="col">Two of three columns</div>
+            <div class="col">Three of Three columns></div>
+        </div>
+        <div class="row align-items-center" style="height:200px;border:1px dotted blue">
+            <div class="col">One of three columns</div>
+            <div class="col">Two of three columns</div>
+            <div class="col">Three of Three columns></div>
+        </div>
+        <div class="row align-items-end" style="height:200px;border:1px dotted blue">
+            <div class="col">One of three columns</div>
+            <div class="col">Two of three columns</div>
+            <div class="col">Three of Three columns></div>
+        </div>
+
+        <div class="row" style="height:200px;border:1px dotted blue">
+            <div class="col">One of three columns</div>
+            <div class="col">Two of three columns</div>
+            <div class="col">Three of Three columns></div>
+        </div>
+
+        <div class="row" style="height:200px;border:1px dotted blue">
+            <div class="col align-self-start">One of three columns</div>
+            <div class="col align-self-center">Two of three columns</div>
+            <div class="col align-self-end">Three of Three columns></div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+        <div class="row">
+            <div class="col-6-lg col-sm-3">.col-6-lg .col-sm-3</div>
+            <div class="col-6-lg col-sm-3">.col-6-lg .col-sm-3</div>
+            <div class="col-6-lg col-sm-3">.col-6-lg .col-sm-3</div>
+            <div class="col-6-lg col-sm-3">.col-6-lg .col-sm-3</div>
+        </div>
+
+        <!-- I AM CONFUSED ABOUT THIS ALL -->
+        <div class="row">
+            <div class="col-6-sm ">.col-6-lg .col-sm-3</div>
+            <div class="col-6-sm">.col-6-lg .col-sm-3</div>
+            <div class="col-6-sm">.col-6-lg .col-sm-3</div>
+            <div class="col-6-sm">.col-6-lg .col-sm-3</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4 offset-sm-4">offset col-sm-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 offset-sm-3">col-sm-3</div>
+            <div class="col-sm-3 offset-sm-3">col-sm-3 offset-sm-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">col-sm-6 offset-sm-3</div>
+        </div>
+
+        <form>
+            <div class="form-group-row">
+                <label for="input1">Sample Label</label>
+                <input class="form-control" type="text" id="input1" placeholder="Sample Text">
+            </div>
+            <div class="form-group">
+                <label for="input2">Another Label</label>
+                <input class="form-control" type="text" id="input2" placeholder="Sample Text">
+            </div>
+        </form>
+
+        <!-- the following does not work for me. Why?-->
+        <form>
+            <div class="form-group-row">
+                <div class="form-group col-md-6">
+                    <label for="firstname">First Name</label>
+                    <input class="form-control" type="text" id="firstname" >
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Last Name</label>
+                    <input class="form-control" type="text" id="lastname">
+                </div>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Small </span>
+                </div>
+                <input type="text" class="form-control" >
+                
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> Default </span>
+                </div>
+                <input type="text" class="form-control" >
+                
+            </div>
+            <div class="input-group input-group-lg">
+                
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> Large </span>
+                </div>
+                <input type="text" class="form-control">
+                
+            </div>
+            <div><p> hello</p></div>
+        </form>
+
+        <form>
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                    <span class="input-group-text">Small </span>
+                </div>
+               
+                
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" >
+                <div class="input-group-append">
+                    <span class="input-group-text"> Default </span>
+                </div>
+                
+                
+            </div>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                    <span class="input-group-text"> Large </span>
+                </div>    
+                
+            </div>
+            <div><p> hello</p></div>
+        </form>
+
+
+        <p class="text-success">This is the color of success</p>
+        <p class="text-danger">Danger, there be lions ahead</p>
+        <p class="text-muted">This Text may not apply to the user anymore</p>
+        <p class="bg-primary text-white">This will add emphasis to the element</p>
+        <p class="bg-info text-white">Put some interesting info here!</p>
+        <p class="bg-white text-dark">Sometimes plain is just right</p>
+
+        <button class="btn" style="background-color: aquamarine;">Click Me</button>
+        <input type="button" class="btn" value="Click Me!" style="background-color: aquamarine;">
+        <a class="btn" style="background-color: aquamarine;" href="http://www.google.com">Go To Google</a>
+        
+        <button class="btn btn-outline-primary">Submit</button>
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary btn-sm" > Small Button</button>
+        <button class="btn btn-secondary" > Default Button</button>
+        <button class="btn btn-success btn-lg" > Large Button</button><br>
+        <button class="btn btn-block btn-primary">Block Button</button>
+        
+        
+    </div>
+ 
+    
+</body>
+</html>

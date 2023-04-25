@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson_6</title>
+</head>
+<body>
+    hello
+    <script>
+        let color1 = "yellow";
+        let color2 = "blue";
+        let color3 = "red";
+
+        let colors = ["yelow","blue","red"];
+        let number = [1,2,3];
+
+        console.log(colors.length); //shows number of items
+
+        colors.sort(); //re-orders alphebetically
+        colors.push("purple"); //adds element to array
+        colors.pop(); //removes last one (purple in this case)
+
+
+        let vehicle = {
+            make: "Toyota",
+            model: "Tacoma",
+            weightInPounds: 3980,
+            color: "Red",        
+            numberOfDoors: 4,
+            fourWheelDrive: true,
+        };
+
+        console.log(vehicle.color)
+
+        /* let i = 0;
+        while(i<=4){
+            console.log("The value of i is: " + i);
+            i= i+ 1;
+        }
+        */
+
+        for(let i =0 ; i < 4 ; i++){
+            console.log("The value of i is: " +i);
+        }
+
+        let cupsOfFlourCalledFor = 4;
+        for(let i = 0 ; i < cupsOfFlourCalledFor ; i++){
+            console.log("There are currently " + i + " cups of flour in bowl");    
+        }
+        
+        alert("The bowl is full of flour!");
+
+        let myArray =[3,5,9,11,18];
+
+        console.log(myArray[3]);
+
+        for(let x = 0 ; x < myArray.length ; x++){
+            if(myArray[x]>=10){
+                console.log("the value " + myArray[x] + " is double digits");
+            }
+            else {
+                console.log("The value " + myArray[x] + " is single digits");
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

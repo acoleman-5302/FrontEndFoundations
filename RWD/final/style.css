@@ -1,0 +1,52 @@
+*{
+    padding:10px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    margin-top:50px;
+}
+.films > img{
+    width: auto;
+    height: 400px;
+}
+
+img{
+    border-radius: 25px;
+}
+
+footer{
+    border-top: 1px solid black;
+    display:flex;
+    justify-content: center;
+}
+
+@media (min-width:320px)  {
+     /* smartphones, iPhone, portrait 480x320 phones */ 
+     body {
+        background-color: white;
+      }
+      .footerImage{
+        width:fit-content
+      }
+    }
+@media (min-width:641px)  { 
+    /* tablet */ 
+    body {
+        background-color: lightblue;
+      }
+}
+@media (min-width:1025px) { 
+    /* large landscape Ipads and desktops */ 
+    body {
+        background-color: pink;
+      }
+      .bio , .skills{
+        width:50%;
+        float:left;
+      }
+    footer{
+        clear:both;
+    }
+}

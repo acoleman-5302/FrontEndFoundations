@@ -1,0 +1,103 @@
+/* icon sizes */
+.bi {
+    font-size:30px;
+    color:black;
+}
+
+/* changes icon sizes using toggle function in script.js */
+.active {
+    font-size:35px;
+}
+
+.icon-container{
+    height:50px;
+    display:flex;
+}
+
+/* Creating a box around each icon so that they dont all 
+move when one grows in size when hovered over */
+.icon-item{
+    height:30px;
+    width:30px;
+    margin:5px;
+}
+
+
+/* icon styling in the footer */
+.bi-envelope-fill , .bi-telephone-fill{
+    padding-right:10px;
+    font-size: 15px;
+}
+
+
+
+
+/* controls the placements of divs within the header-container
+ (the information and image divs) */
+.header-container{
+    display:flex;
+    justify-content: space-around;
+    margin:30px 20px;
+}
+
+/* styling the skills list */
+.skills{
+    margin:50px;
+}
+
+/* image size */
+img{
+    width:500px;
+    height:400px;
+    border-radius: 10%;
+}
+
+
+
+
+/* controlling the placemnts of divs within the body-container 
+(the bottom half of the page) (contains divs with paragraph and btn-group class) */
+.body-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+/* paragraph styling (gives room to read text even with sticky footer) */
+.paragraph{
+    width:500px;
+    margin-bottom:50px;
+}
+
+/* button size */
+.btn-group {
+    width:300px;
+    height:100px;
+}
+
+/* giving margin to the button group*/
+.margin{
+    margin-right:150px;
+    margin-top:50px;
+}
+
+
+
+
+/* main footer styling */
+.footer-container {
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding:10px;
+    color: black;
+    font-size: 15px;
+    background-color:lightgoldenrodyellow;
+}
+
+/* div styling within the footer */
+.footer-item{
+    margin: 0 10px;
+}
