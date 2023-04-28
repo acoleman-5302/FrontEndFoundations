@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Portfolio.css";
 
 const user = "acoleman-5302";
@@ -6,28 +6,27 @@ const URL = `https://api.github.com/users/${user}/repos`;
 const repoPrefix = "-";
 let repos = [];
 
+// grabs my gitHub information
+fetch(URL)
+.then((response) => response.json())
+.then((data) => {
+  data.forEach((repo) => {
+    console.log(repo.name);
+    if (repo.name.indexOf(repoPrefix) > -1) {
+      repos.push(repo);
+    }
+  });
+});
 
-
-
+// Portfolio Component
 function Portfolio (){
 
-
-  fetch(URL)
-  .then((response) => response.json())
-  .then((data) => {
-    data.forEach((repo) => {
-      console.log(repo.name);
-      if (repo.name.indexOf(repoPrefix) > -1) {
-        repos.push(repo);
-      }
-    });
-  });
-  .
-
     return(
-
-      <div className="portfolio"> 
+      <div> 
         <h1>My Projects</h1><br/>
+        <hr/>
+
+        {/* Takes my fetched information and maps it to display on the webpage */}
         <div className="container">
           {repos.map(project => 
             <div className="work" key={project.id}>

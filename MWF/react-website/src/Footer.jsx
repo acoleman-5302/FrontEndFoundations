@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
+// Footer component
 function Footer() {
     return(
         <footer className="footer">
@@ -21,13 +22,13 @@ function Footer() {
                 </div>
 
                 <div className="contact-container" >
-                <div className="icon-item">
-                    <i className="bi bi-envelope-fill email contact" ></i>acoleman@seu.edu
-                </div>
-                    
-                <div className="icon-item">
-                        <i className="bi bi-telephone-fill phone contact"></i>(229)834-6319
-                </div> 
+                    <div className="icon-item">
+                        <i className="bi bi-envelope-fill contact" ></i>acoleman@seu.edu
+                    </div>
+                        
+                    <div className="icon-item">
+                            <i className="bi bi-telephone-fill contact"></i>(229)834-6319
+                    </div> 
                 </div>
 
             </footer>
