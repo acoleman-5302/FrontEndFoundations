@@ -26,12 +26,24 @@ const TOC : React.FC = () => (
             <IonItem routerLink = "/" routerDirection='back'>
                 <IonLabel>Cover</IonLabel>
             </IonItem>
+            
+            <IonItem routerLink = "/chapter/1" routerDirection='forward'>
+                <IonLabel>Chapter 1</IonLabel>
+            </IonItem>
+            
+            <IonItem routerLink = "/chapter/2" routerDirection='forward'>
+                <IonLabel>Chapter 2</IonLabel>
+            </IonItem>
+            
+            <IonItem routerLink = "/chapter/3" routerDirection='forward'>
+                <IonLabel>Chapter 3</IonLabel>
+            </IonItem>
         </IonList>
       </IonContent>
 
       <IonFooter>
         <IonToolbar>
-          <IonButton routerDirection='forward' routerLink='/chapter/1'>
+          <IonButton routerDirection='forward' routerLink='/chapter/1' expand='full'>
             <IonIcon icon={chevronForwardOutline} />
           </IonButton>    
         </IonToolbar>

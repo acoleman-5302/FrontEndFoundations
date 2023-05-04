@@ -1,6 +1,7 @@
 import { IonFooter, IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 // import ExploreContainer from "../components/ExploreContainer";
+import "./Cover.css";
 
 const Cover : React.FC = () => (
     
@@ -17,14 +18,14 @@ const Cover : React.FC = () => (
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Cover</IonTitle>
+            <IonTitle size="large">Cover Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-
-        <h1>My Book </h1>
-        <img src ="https://picsum.photos/200/300" />
-        <h2>Me</h2>
-
+        <div>
+          <h1>My Book </h1>
+          <img src ="https://picsum.photos/200/300" />
+          <h2>Me</h2>
+        </div>
       </IonContent>
 
       <IonFooter>

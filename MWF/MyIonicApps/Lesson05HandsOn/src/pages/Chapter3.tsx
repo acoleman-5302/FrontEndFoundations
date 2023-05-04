@@ -1,21 +1,22 @@
 import { IonGrid, IonRow, IonCol, IonIcon, IonFooter, IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Page.css';
 import {chevronForwardOutline, chevronBackOutline, menuOutline} from "ionicons/icons";
-const Chapter1: React.FC = () => (
+
+const Chapter3: React.FC = () => (
     <IonPage>
     <IonHeader>
       <IonToolbar>
         <IonButtons slot="start">
           <IonMenuButton />
         </IonButtons>
-        <IonTitle>Chapter 1</IonTitle>
+        <IonTitle>Chapter 3</IonTitle>
       </IonToolbar>
     </IonHeader>
 
     <IonContent fullscreen>
       <IonHeader collapse="condense">
         <IonToolbar>
-          <IonTitle size="large">Chapter 1</IonTitle>
+          <IonTitle size="large">Chapter 3</IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -41,11 +42,7 @@ const Chapter1: React.FC = () => (
                     <IonIcon icon={menuOutline}/>
                   </IonButton>
                 </IonCol>
-                <IonCol>
-                  <IonButton routerDirection='forward' routerLink='/chapter/2' expand='full'>
-                    <IonIcon icon={chevronForwardOutline} />
-                  </IonButton>
-                </IonCol>
+
               </IonRow>
             </IonGrid>
 
@@ -57,4 +54,4 @@ const Chapter1: React.FC = () => (
   </IonPage>
   );
 
-export default Chapter1;
+export default Chapter3;
