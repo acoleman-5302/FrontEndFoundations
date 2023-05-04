@@ -33,7 +33,7 @@ const Chapter3: React.FC = () => (
             <IonGrid>
               <IonRow>
                 <IonCol>
-                  <IonButton routerDirection='back' routerLink='/toc' expand='full'>
+                  <IonButton routerDirection='back' routerLink='/chapter/2' expand='full'>
                     <IonIcon icon={chevronBackOutline} />
                   </IonButton>
                 </IonCol>
